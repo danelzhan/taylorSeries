@@ -1,0 +1,9 @@
+* {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+div {
+    border: 1px solid blue;
+    min-width: 20px;
+}
