@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 
 * {
@@ -9,7 +10,7 @@
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 24px;
 }
 
 p {
@@ -178,7 +179,7 @@ div {
   border-radius: 50%;
   width: 15vw;
   height: 15vw;
-  background: -moz-radial-gradient(rgba(227, 227, 227, 0.1), rgba(0, 0, 0, 1));
+  background: -moz-radial-gradient(rgba(227, 227, 227, 0.12), rgba(0, 0, 0, 1));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -186,7 +187,7 @@ div {
 }
 
 #contributions :hover {
-  background: -moz-radial-gradient(rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 1));
+  background: -moz-radial-gradient(rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 1));
 }
 
 #contributions .contribution_specific :hover{
