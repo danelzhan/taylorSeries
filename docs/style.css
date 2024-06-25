@@ -1,8 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
 * {
   padding: 0px;
   margin: 0px;
   border: 0px;
   box-sizing: border-box;
+  color: #27221f;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+p {
+  font-size: 24px;
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
@@ -56,8 +70,8 @@ div {
 }
 
 .checkpoint {
-  margin-top: 7vh;
-  margin-bottom: 7vh;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
   cursor: pointer;
   width: 340px;
   height: 480px;
@@ -74,6 +88,16 @@ div {
   margin-right: auto;
 }
 
+.year .odd {
+  margin-right: 10vw;
+  margin-left: auto;
+}
+
+.year .even {
+  margin-left: 10vw;
+  margin-right: auto;
+}
+
 .card_front, .card_back {
   width: 340px;
   height: 480px;
@@ -86,18 +110,26 @@ div {
 
 .card_front img {
   overflow: hidden;
-  height: 100%;
+  min-height: 100%;
   max-width: 100%;
   transform: perspective(600px) rotateY(0deg);
 }
 
 .card_back {
-  background-color: white;
+  background-image: url("media/parchment_background.jpg");
   transform: perspective(600px) rotateY(180deg);
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 5%;
+}
+
+.card_back_content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .checkpoint:hover > .card_front {
@@ -123,4 +155,21 @@ div {
   /*border: 1px solid blue;*/
   width: 340px;
   text-align: center;
+}
+
+.return_button {
+  background-color: transparent;
+  color: aliceblue;
+  border: 2px solid aliceblue;
+  padding: 10px 20px;
+  border-radius: 4px;
+  width: 12.5vw;
+  height: 6vh;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.return_button:hover {
+  background-color: aliceblue;
+  color: black;
 }
