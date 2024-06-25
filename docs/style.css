@@ -1,0 +1,76 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+#hero {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#hero_title {
+  position: absolute;
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  color: #EEEEEE;
+  text-align: center;
+  font-size: 6.5rem;
+  font-weight: 700;
+}
+
+.checkpoint {
+  margin-top: 20vh;
+  cursor: pointer;
+  width: 340px;
+  height: 480px;
+}
+
+.odd {
+  transform: translateX(-20vw);
+}
+
+.even {
+  transform: translateX(20vw);
+}
+
+.card_front, .card_back {
+  width: 340px;
+  height: 480px;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform 0.6s linear;
+  border-radius: 20px;
+}
+
+.card_front img {
+  overflow: hidden;
+  height: 100%;
+  max-width: 100%;
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.card_back {
+  background-color: white;
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.checkpoint:hover > .card_front {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.checkpoint:hover > .card_back {
+  transform: perspective(600px) rotateY(0deg);
+}
